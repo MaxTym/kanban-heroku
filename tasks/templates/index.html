@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Api</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'tasks/css/index.css' %}">
+    </head>
+    <body>
+
+        <!-- nav bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a id="link" class="navbar-brand" href="/index/"><span>Tasks API</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/login/">Login</a></li>
+                        <li><a href="/logout/">Logout</a></li>
+                        <li><a href="/register/">Create User</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav bar -->
+
+        <!-- Task edit -->
+        <div class="container">
+            <div class="row">
+                    <div id="editTasks" class="col-md-3">
+                        <h6>Add Task</h6>
+                        <form>
+                            <p>Title:</p>
+                            <input type="text" id="addTask" name="vehicle"><br>
+                        </form>
+                        <form type="submit">
+                            <select id="priority">
+                               <option>Priority</option>
+                               <option value='H'>High</option>
+                               <option value='M'>Medium</option>
+                               <option value='L'>Low</option>
+                            </select>
+                            <select id="status">
+                               <option>Status</option>
+                               <option value='N'>new</option>
+                               <option value='P'>in progress</option>
+                               <option value='C'>done</option>
+                            </select>
+
+                        </form><br>
+                        <button id="add">Add Task</button><br>
+                        <br>
+
+                        <h6>Edit Tasks</h6>
+                        <form>
+                            <select id="selectEditTask">
+                                <option id="edit_options">choose a task</option>
+                            </select>
+                        </form>
+                        <br>
+                        <form>
+                            <p>Current Title:</p>
+                            <input type="text"  id="edit_title" name="vehicle_two"><br>
+                        </form>
+                        <form>
+                            <select id="edit_priority">
+                               <option>Priority</option>
+                               <option value='H'>High</option>
+                               <option value='M'>Medium</option>
+                               <option value='L'>Low</option>
+                            </select>
+                            <select id="edit_status">
+                               <option>Status</option>
+                               <option value='N'>new</option>
+                               <option value='P'>in progress</option>
+                               <option value='C'>done</option>
+                            </select>
+                        </form><br>
+                        <button id="try_patch">Edit Task</button><br>
+                        <br>
+                        <h6>Delete Tasks</h6>
+                        <form>
+                            <select id="selectTask">
+                            <option id="options">choose a task</option>
+                            </select>
+                        </form>
+                        <br>
+                        <button id="getValue">Delete Task</button><br>
+                        <br>
+                    </div> <!--end edit col -->
+
+                    <div class="col-md-3" id="tasks">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>New</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="new">
+                            </div>
+                        </div>
+                    </div><!--end of new col -->
+
+                    <div class="col-md-3" id="tasks">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>In Progress</h6>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div id="in_progess">
+                            </div>
+                        </div>
+                    </div><!--end of in progress-->
+
+                    <div class="col-md-3" id="tasks">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>Done</h6>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div id="done">
+                            </div>
+                        </div>
+                    </div><!--end of done tasks -->
+
+            </div> <!--end row -->
+        </div><!-- end container -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="{% static 'tasks/js/tasks.js' %}"></script>
+    </body>
+</html>

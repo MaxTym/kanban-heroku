@@ -1,0 +1,10 @@
+body{
+    background-color: #40a35b;
+}
+
+#submit_button{
+    border-radius: 20px;
+    background-color: #e2e4e6;
+    border: solid #e2e4e6 1px;
+    margin-top: 1%;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet">
+                <link rel="stylesheet" href="{% static 'tasks/css/login.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Login</h2>
+                    <div class="row">
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button id="button" type="submit">Login</button>
+                        </form>
+                        <form method="post" action="{% url 'register' %}">
+                            {% csrf_token %}
+                            <button id="button" type="submit">Register for Account</button>
+                        </form>
+                        <form method="" action="{% url 'index' %}">
+                            <button id="button" type="submit">Home Page</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+.container-fluid{
+    background-color: #963c2b;
+
+}
+.navbar{
+    border: 0;
+    max-height: 10%;
+}
+
+.navbar {
+    min-height:38px;
+}
+
+.navbar .navbar-brand{
+    padding: 0 12px;
+    font-size: 16px;
+    line-height: 38px;
+    height: 38px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 38px;
+}
+
+.navbar .navbar-toggle {
+     margin-top: 3px;
+     margin-bottom: 0px;
+     padding: 8px 9px;
+}
+
+.navbar .navbar-form {
+    margin-top: 2px;
+    margin-bottom: 0px
+}
+
+.navbar-inverse .navbar-brand{
+    color: #454544;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #454544;
+    font-weight: bold;
+}
+
+.container{
+    text-align: center;
+}
+
+.row{
+    margin-bottom: 1%;
+    text-align: center;
+
+}
+
+.col-md-12{
+    text-align: left;
+}
+.col-md-4{
+    text-align: center;
+    background-color: #e2e4e6;
+    float: center;
+
+}
+
+.col-md-3{
+    text-align: center;
+    background-color: #e2e4e6;
+    float: center;
+
+}
+
+h6{
+
+    font-weight: bold;
+    border-bottom: solid grey 1px;
+    text-align: left;
+    color: #4d4d4d
+}
+
+h3{
+    text-align: left;
+}
+
+p{
+    font-weight: bold;
+    text-align: left;
+    color: #4d4d4d
+}
+
+body{
+    background-color: #b04632;
+}
+
+#tasks{
+    background-color: #e2e4e6;
+    border-radius: 2%;
+    border: solid #A2A2A0 1px;
+
+}
+
+#editTasks{
+    background-color: #e2e4e6;
+    border-radius: 2%;
+}
+
+#new{
+    text-align: left;
+}
+
+#in_progess{
+    text-align: left;
+}
+
+#done{
+    text-align: left;
+}
+
+#add{
+    float: center;
+    border-radius: 5px;
+    border: 0;
+}
+
+#try_patch{
+    float: center;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+#getValue{
+    float: center;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+.row_divider{
+    border-bottom: solid grey 2px;
+}
